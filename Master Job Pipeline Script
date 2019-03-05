@@ -1,0 +1,103 @@
+//Master Job Pipeline Script
+
+node ( 'zld02851')
+{ stage 'Checkout'
+
+def userInput = input(
+ id: 'userInput', message:'Do you want to initiate phase 1 build', parameters: [
+ [$class: 'TextParameterDefinition', choices: ['yes','no','maybe'] ,description: ' ', name: 'atg'],
+[$class: 'TextParameterDefinition', choices: ['yes','no','maybe'], description: ' ', name: 'olam'],
+[$class: 'TextParameterDefinition', choices: ['yes','no','maybe'], description: ' ', name: 'best'],
+[$class: 'TextParameterDefinition', choices: ['yes','no','maybe'], description: ' ', name: 'csr']
+]) 
+
+  
+parallel firstBranch: {
+ if (userInput['atg'] == 'yes') {
+build '../../Mobile/myatt_Mobile_ATG_Pipeline_Phase_1_Build/release%2F17.08.15.REL'
+}
+if (userInput['atg'] == 'no') {
+
+sh ''' build_id=`wget -qO- http://zld02854.vci.att.com:8080/job/DEV/job/Mobile/job/myatt_Mobile_ATG_Pipeline_Phase_1_Build/job/release%252F17.08.15.REL/lastSuccessfulBuild/buildNumber`
+echo "$build_id  is the last sucessful ATG that we are using for deployment."
+'''
+}
+},
+secondBranch: {
+ if (userInput['olam'] == 'yes') {
+ build '../Olam_code_checkout/release%2F17.08.15.REL'
+ 
+ 
+}
+if (userInput['olam'] == 'no') {
+
+sh ''' build_id=`wget -qO- http://zld02854.vci.att.com:8080/job/DEV/job/Olam/job/Olam_code_checkout/job/release%252F17.08.15.REL/lastSuccessfulBuild/buildNumber`
+echo "$build_id  is the last sucessful MF that we are using for deployment."
+'''
+}
+},
+thirdBranch: {
+if (userInput['best'] == 'yes') {
+   build '../../Mobile/myatt_Mobile_BEST_Pipeline_Phase_1_Build/release%2F17.08.15.REL'
+}
+if (userInput['best'] == 'no') {
+
+sh ''' build_id=`wget -qO- http://zld02854.vci.att.com:8080/job/DEV/job/Mobile/job/myatt_Mobile_BEST_Pipeline_Phase_1_Build/job/release%252F17.08.15.REL/lastSuccessfulBuild/buildNumber`
+echo "$build_id  is the last sucessful MF that we are using for deployment."
+'''
+}
+},
+fourthBranch: {
+if (userInput['csr'] == 'yes') {
+
+  build '../CSR_code_checkout/release%2F17.08.15.REL'
+
+}
+if (userInput['csr'] == 'no') {
+sh ''' build_id=`wget -qO- http://zld02854.vci.att.com:8080/job/DEV/job/Olam/job/CSR_code_checkout/job/release%252F17.08.15.REL/lastSuccessfulBuild/buildNumber`
+echo "$build_id  is the last sucessful best that we are using for deployment."
+'''
+}}
+}
+
+node ('zld02851')
+{  
+    stage 'Ear Generation'
+    build 'DEV/Olam/Olam_Phase_1_Build/Olam_1708_Phase1build'
+}
+
+node ('dkv8amm2')
+{ 
+    stage 'deployment'
+    
+    sh  ''' 
+        cd /opt/app/workload/dkv8amm2/component/dolam2kv8/bin
+        ./stop
+        '''
+//sleep time: 2, unit: 'MINUTES'
+
+sh '#chef-client -c /opt/app/workload/CHEF/.chef-server/client.rb'
+sh '''cd /opt/app/billpro/jenkins/dkv8amm2_slave/scripts/colam
+./build_deployment.sh'''
+
+sh '''cd /opt/app/workload/dkv8amm2/component/dolam2kv8/bin
+./start'''
+
+sleep time: 7, unit: 'MINUTES'
+
+stage 'CSR_ZONE Deployment'
+build '../Zone_CSR_Deployment/Deployment_1708_Zone_CSR'
+
+}
+
+node ('zld02852')
+{ stage 'server state'
+sh ''' cd /opt/app/billpro/jenkins/dkv8amm2_slave/scripts/17.08.15.REL
+./server_state_check.sh'''
+}
+
+node ('dkv8amm2')
+{ stage 'JSP Precompile Generation'
+sh ''' cd /opt/app/workload/dkv8amm2/component/dolam2kv8/scripts
+./jspprecompile_copy.sh'''
+}
