@@ -1,0 +1,70 @@
+//Phase 1 Build Pipeline Script
+
+node ('zld02851')
+{ stage 'code compilation'
+sh '''
+cd /opt/app/workload/jenkins/buildfiles/atgservice/18.10.09
+./compile-atgservice.sh
+
+sleep 5
+
+
+cd /opt/app/workload/jenkins/buildfiles/colam/18.10.09
+./compile-colam.sh
+
+sleep 5
+
+cd /opt/app/workload/jenkins/buildfiles/myattzone/18.10.09
+./compile-tbmcsr.sh
+
+sleep 5
+
+cd /opt/app/workload/jenkins/buildfiles/widget/18.10.09
+./compile-widget.sh
+
+cd /opt/app/billpro/devSrcRepository/olamG_Dev/src/Widget
+
+JAVA_HOME=/opt/app/workload/component/JDK/jdk1.8.0_144
+PATH=$PATH:.:$HOME/bin:$JAVA_HOME/bin:$HOME/${LOGNAME}/perf:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/etc:/usr/localcw/bin
+PATH=$PATH:.:$HOME/bin
+export PATH JAVA_HOME
+
+/opt/app/workload/component/software/ant/apache-ant-1.7.1/bin/ant clean
+/opt/app/workload/component/software/ant/apache-ant-1.7.1/bin/ant extract
+
+
+echo "Property Generation Started for 18.10.09 Dev Environment"
+
+cd /opt/app/workload/jenkins/buildfiles/colam/18.10.09/dev
+
+./property-generation-olam.sh
+./property-generation-csr.sh
+./property-generation-zone.sh
+
+
+echo "Property Copy Script Started for 18.10.09 QA Environment"
+cd /opt/app/workload/jenkins/buildfiles/colam/18.10.09/qa
+./property-copy-olam.sh
+./property-copy-zone.sh
+
+cd /opt/app/workload/devSrcRepository/scripts/BEST/18.10.09/temp
+cp -r ehcache-core-2.6.6.jar ehcache-2.7.0.jar /opt/app/billpro/component/olamG_Domain/postclasspath_OlamApp
+cp -r sl-cache-config.xml ehcache.xml /opt/app/billpro/devSrcRepository/olamG_Dev/prepareMoveToDEV/OLAM
+cp -r sl-cache-config.xml ehcache.xml /opt/app/billpro/devSrcRepository/olamG_Dev/prepareMoveToDEV/CSR
+cp -r sl-cache-config.xml ehcache.xml /opt/app/billpro/devSrcRepository/olamG_Dev/prepareMoveToQA/OLAM
+
+cd /opt/app/workload/jenkins/buildfiles/colam/18.10.09
+./Jenkins_Build_No_Update.sh 
+echo "***********Jenkins Build No Updated Successfully***********" 
+
+cd /opt/app/workload/jenkins/buildfiles/colam/18.10.09
+ant moveToDEV
+ant moveToQA
+'''
+
+stage 'kit generation for dev'
+
+sh '''cd /opt/app/workload/jenkins/buildfiles/colam/18.10.09
+./create-kit.sh'''
+
+}
