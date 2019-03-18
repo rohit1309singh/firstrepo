@@ -1,0 +1,68 @@
+App Directory struccture
+
+Name
+
+1. UI Name --- App for Insurance
+2. Folder name --- app_insurance
+
+ -- default - Knowledge objects configurations & data folder - Refer below
+ -- local   - Knowledge objects configurations & data folder - Refer below
+ -- metadata - permissions - default.meta (For overall) and local.meta (For individual)
+ -- lookups - lookup files go here
+ -- appserver/static -- Javascript and CSS go here
+ -- static - images go here
+
+
+Data folder
+data - ui - 
+          - nav - default.xml (Navigation Go here)
+          - views - your dashboards go here
+
+Knowledge objects
+fields     --- props.conf/transforms.conf
+tags       --- tags.conf
+eventtypes --- eventtypes.conf
+lookup calls  --- props & transforms.conf
+reports and alerts---- savedsearches.conf
+
+
+
+App permission
+
+[objecttype/objectname]
+access = read:[roles] write:[roles]
+
+
+[views/top 10 dashboard]
+acces = read:[banking] write:[banking_admin]
+
+
+
+Navigation Images
+
+appIcon 36*36     -- Image in Launcher
+appIconAlt 36*36  -- Image in dropdown
+appLogo 320*80    -- Image in Search bar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

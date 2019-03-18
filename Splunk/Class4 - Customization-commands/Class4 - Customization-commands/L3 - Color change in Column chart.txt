@@ -1,0 +1,35 @@
+<form>
+    <label>Internal Index Detailed Summary</label>
+   <row>
+      <panel>  
+        <input type="dropdown" token="" searchWhenChanged="true">
+          <choice value="source">Display Source List</choice>
+          <choice value="sourcetype">Display Sourcetype List</choice>
+          <choice value="host">Display Host List</choice>
+          <default></default>
+        
+          <change>
+            <condition value="source">
+              <set token="new_search"> index=_internal |stats count by source | rename count as sourcecount </set>
+            </condition>
+            <condition value="sourcetype">
+              <set token="new_search"> index=_internal |stats count by sourcetype | rename count as sourcetypecount </set>
+            </condition>
+            <condition value="host">
+              <set token="new_search"> index=_internal |stats count by host | rename count as hostcount</set>
+            </condition>
+          </change>
+        </input>
+        
+        <chart>
+          <search>
+            <query>$new_search$</query>
+            <earliest>-24h@h</earliest>
+            <latest>now</latest>
+          </search>
+          <option name="charting.chart">column</option>
+		  <option name="charting.fieldColors">{"sourcecount":0xF87217,"sourcetypecount":0x0000FF,"hostcount":0x73A550}</option>
+        </chart>
+      </panel>
+    </row>
+  </form>

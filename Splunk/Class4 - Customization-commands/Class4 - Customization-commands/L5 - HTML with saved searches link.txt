@@ -1,0 +1,29 @@
+<dashboard>
+  <label>HTML for Switch to saved searches</label>
+<row>
+  <panel>
+    <html>
+	<head>
+<style>
+p {
+    color: blue;
+    font-family: verdana;
+    font-size: 100%;
+
+}
+
+</style>
+</head>
+      <h1 style="background-color:rgb(0,255,255)">An example with <em>HTML</em> panel along with <i>switch to saved searches</i></h1>
+      <ul>
+        <li>
+          <p><a href="@go?s=sourcetype15">View sourcetypes in Last 15 minutes</a></p>
+        </li>
+        <li>
+          <p><a href="@go?s=source15">View source in Last 15 minutes</a></p>
+        </li>
+      </ul>
+    </html>
+  </panel>
+</row>
+</dashboard>

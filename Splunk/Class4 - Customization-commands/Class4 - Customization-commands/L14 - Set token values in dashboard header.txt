@@ -1,0 +1,17 @@
+## How to include result set into dashboard view
+
+Include progress or cancelled or finalized tags to set your token values
+
+
+## Sample
+       <table>
+         <title>Top source is $result.source$</title>
+         <search>
+           <query>index=_internal | top source</query>
+           <earliest>-60m</earliest>
+           <latest>now</latest>
+           <finalized>
+             <set token="first_sourcetype">$result.sourcetype$</set>
+           </finalized>
+		   <search>
+		   </table>

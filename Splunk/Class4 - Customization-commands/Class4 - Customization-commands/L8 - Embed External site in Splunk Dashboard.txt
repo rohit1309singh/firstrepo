@@ -1,0 +1,9 @@
+<dashboard>
+   <label>My Google Dashboard</label>
+   <row>
+     <html>
+     <h2>Embedded Web Page!</h2>
+        <iframe src="http://www.google.com" width="100%" height="300">&gt;</iframe>
+     </html>
+   </row>
+   </dashboard>

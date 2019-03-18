@@ -1,0 +1,12 @@
+<dashboard>
+ <row>
+   <html>
+     <h1>Embed Image in Splunk Dashboards</h1>
+     <p>Welcome to ABC Bank</p>
+       <img src="/static/app/search/screenshot.png"/>
+    </html>
+   </row>
+ </dashboard>
+ 
+ 
+ Note: Place your image under /opt/splunk/etc/apps/<app>/appserver/static/<Place your image here>

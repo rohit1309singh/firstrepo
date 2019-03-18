@@ -1,0 +1,55 @@
+## Report Embedding
+
+With Report Embedding you can embed scheduled reports in external websites
+
+## Steps
+
+1. Create a report
+2. Enable scheduling
+3. Enable embedding and take iframe link 
+4. Copy in your HTML code
+
+## Pre-requisite:
+
+You should have "embed_report" capability
+
+
+## Limitations
+
+No drilldown
+No workflow action
+No field expansion
+No table sorting
+
+## Warning
+
+Upgradation will lose the original link. So add the following stanza in server.conf
+
+embedSecret = <your secret string>
+
+## Customization
+
+If you want to change default splunk> stanza in that image, go to web.conf and add this stanza
+embed_footer = mydashboard
+
+It should be a string not image
+
+## Configuration changes
+
+Once you embed the report, in savedsearches.conf embed.enabled will become 1
+
+
+## Sample
+
+<html>
+<head>
+<title>ABC Bank</title>
+</head>
+<body>
+<h1>Welcome to ABC Bank</h1>
+<p>This is a test to check Splunk Embed options</p>
+## Your iframe goes here ##
+</body>
+</html>
+
+

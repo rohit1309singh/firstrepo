@@ -1,0 +1,21 @@
+Bulletin Message
+
+As an admin you can create bulletin messagae and deliver it to the external users
+
+Admin can distribute this message to all the users who logged into SH currently
+
+Once admin deletes the message, it will disappear from the UI for all users
+
+
+## UI 
+
+Go to Settings - User Interface - Bulletin Message
+
+1. Create your bulletin message here and save
+
+
+## Backend
+
+Distribute the curl command to display the message
+
+curl -k -u admin:password https://127.0.0.1:8089/services/messages -d severity="ALERT" -d name=ALERT_MESSAGE -d value="This is your Splunk Admin, there will be a maintenance of this instance in 10 minutes -> 15:00 , ETA of 30 minutes -> 15:30, for updates contact me at splunkadmin@mydomain.com"

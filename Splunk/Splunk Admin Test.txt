@@ -1,0 +1,139 @@
+Step-1: Create 2 Instances on AWS EC2.
+(a) Application Server
+(b) Indexer
+
+Step-2: Create Indexer and open 3 TCP ports. 
+Port Range: 8089 | 8000 | 9997
+
+Step-3: Review & Launch
+
+Step-4: Create Application Server and open 1 TCP port.
+Port Range: 8089
+
+Take indexer's IP address and connect to Linux box with private key via Putty.
+
+Step-5: Login as: ec2-user
+
+Step-6: Enter passphrase for private key
+
+Step-7: sudo su
+
+Step-8: yum install wget
+
+Step-9: cd /opt
+
+Step-10: ls -lrt
+
+Step-11: Go to Splunk Enterprise Download and install wget link (right click)
+
+Step-12: ls -lrt
+
+Step-13: tar -zxvf splunk.tar
+
+Step-14: ls -lrt
+
+Step-15: cd splunk/bin
+
+Step-16: ./splunk start --accept-license
+
+Step-17: username
+
+Step-18: changeme
+
+Step-19: ./splunk status
+
+Step-20: Take IP address of Indexer and append :8000 in browser
+
+Step-21: Go to Settings->Forwarding & Receving->Configure Settings->New Receiving Port->9997
+
+Step-22: Go to Settings->Indexes->New Index->Index Name: bank
+
+Step-23: Open another Putty and copy Application Server's IP and load private key.
+
+Step-24: Login as: ec2-user
+
+Step-25: Enter passphrase
+
+Step-26: sudo su
+
+Step-27: cd /usr
+
+Step-28: mkdir testing
+
+Step-29: cd testing/
+
+Step-30: pwd
+
+Step-31: vi sample.log
+
+Step-32: Enter key "i" and enter data:
+This is credit data
+This is debit data
+
+.
+.
+.
+.
+:wq!
+ 
+Step-33: pwd
+
+Step-34: ls -lrt
+
+Step-35: cd /opt
+
+Step-36: uname -a
+
+Step-37: Go to Splunk Universal Forwarder and get the wget link.
+
+Step-38: right click
+
+Step-39: yum install wget
+
+Step-40: right click
+
+Step-41: tar -zxvf "Splunk.tar"
+
+Step-42: ls -lrt
+
+Step-43: cd splunkforwarder/bin
+
+Step-44: ./splunk start --accept-license
+
+Step-45: Enter username
+
+Step-46: Enter changeme
+
+Step-47: ./splunk status
+
+Step-48: cd ..
+
+Step-49: cd etc/system/local
+
+Step-50: pwd
+
+Step-51: ls -lrt
+
+Step-52: rm inputs.conf
+
+Step-53: y
+
+Step-54: vi inputs.conf
+
+Step-55: [monitor:///usr/testing/sample.log]
+index = bank
+
+Step-56: vi outputs.conf
+
+Step-57: 
+
+Step-58: ls -lrt
+
+Step-59: pwd
+
+Step-60: cd /opt/splunkforwarder/bin
+
+Step-61: ./splunk restart
+
+
+

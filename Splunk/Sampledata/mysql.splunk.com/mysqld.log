@@ -1,0 +1,180 @@
+30/Oct/2013:14:00:41:196 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+30/Oct/2013:14:00:41,196 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+30/Oct/2013:14:00:43:196 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+30/Oct/2013:14:00:43,196 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+30/Oct/2013:14:00:44:196 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+30/Oct/2013:14:00:44,196 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+30/Oct/2013:14:00:46:196 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+30/Oct/2013:14:00:46,196 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+30/Oct/2013:14:00:47:196 [CRITICAL] Aborting
+30/Oct/2013:14:00:47,196 [CRITICAL] Aborting
+30/Oct/2013:14:00:48:196 [CRITICAL] ./mysqld: Shutdown complete
+30/Oct/2013:14:00:48,196 [CRITICAL] ./mysqld: Shutdown complete
+30/Oct/2013:20:35:00:138 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+30/Oct/2013:20:35:00,138 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+30/Oct/2013:20:35:01:138 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+30/Oct/2013:20:35:01,138 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+30/Oct/2013:20:35:02:138 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+30/Oct/2013:20:35:02,138 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+30/Oct/2013:20:35:03:138 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+30/Oct/2013:20:35:03,138 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+30/Oct/2013:20:35:04:138 [CRITICAL] Aborting
+30/Oct/2013:20:35:04,138 [CRITICAL] Aborting
+30/Oct/2013:20:35:05:138 [CRITICAL] ./mysqld: Shutdown complete
+30/Oct/2013:20:35:05,138 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:09:08:00:125 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:09:08:00,125 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:09:08:01:125 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:09:08:01,125 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:09:08:02:125 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:09:08:02,125 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:09:08:04:125 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:09:08:04,125 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:09:08:05:125 [CRITICAL] Aborting
+31/Oct/2013:09:08:05,125 [CRITICAL] Aborting
+31/Oct/2013:09:08:06:125 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:09:08:06,125 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:17:41:45:158 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:17:41:45,158 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:17:41:47:158 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:17:41:47,158 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:17:41:48:158 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:17:41:48,158 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:17:41:50:158 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:17:41:50,158 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:17:41:52:158 [CRITICAL] Aborting
+31/Oct/2013:17:41:52,158 [CRITICAL] Aborting
+31/Oct/2013:17:41:53:158 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:17:41:53,158 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:19:42:42:195 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:19:42:42,195 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:19:42:44:195 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:19:42:44,195 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:19:42:45:195 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:19:42:45,195 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:19:42:47:195 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:19:42:47,195 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:19:42:48:195 [CRITICAL] Aborting
+31/Oct/2013:19:42:48,195 [CRITICAL] Aborting
+31/Oct/2013:19:42:50:195 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:19:42:50,195 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:19:42:50:123 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:19:42:50,123 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:19:42:52:123 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:19:42:52,123 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:19:42:54:123 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:19:42:54,123 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:19:42:55:123 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:19:42:55,123 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:19:42:56:123 [CRITICAL] Aborting
+31/Oct/2013:19:42:56,123 [CRITICAL] Aborting
+31/Oct/2013:19:42:56:123 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:19:42:56,123 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:19:45:00:189 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:19:45:00,189 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+31/Oct/2013:19:45:01:189 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:19:45:01,189 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+31/Oct/2013:19:45:02:189 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:19:45:02,189 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+31/Oct/2013:19:45:04:189 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:19:45:04,189 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+31/Oct/2013:19:45:06:189 [CRITICAL] Aborting
+31/Oct/2013:19:45:06,189 [CRITICAL] Aborting
+31/Oct/2013:19:45:07:189 [CRITICAL] ./mysqld: Shutdown complete
+31/Oct/2013:19:45:07,189 [CRITICAL] ./mysqld: Shutdown complete
+02/Nov/2013:17:34:00:151 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+02/Nov/2013:17:34:00,151 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+02/Nov/2013:17:34:02:151 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+02/Nov/2013:17:34:02,151 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+02/Nov/2013:17:34:03:151 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+02/Nov/2013:17:34:03,151 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+02/Nov/2013:17:34:04:151 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+02/Nov/2013:17:34:04,151 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+02/Nov/2013:17:34:06:151 [CRITICAL] Aborting
+02/Nov/2013:17:34:06,151 [CRITICAL] Aborting
+02/Nov/2013:17:34:08:151 [CRITICAL] ./mysqld: Shutdown complete
+02/Nov/2013:17:34:08,151 [CRITICAL] ./mysqld: Shutdown complete
+02/Nov/2013:21:39:29:200 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+02/Nov/2013:21:39:29,200 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+02/Nov/2013:21:39:31:200 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+02/Nov/2013:21:39:31,200 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+02/Nov/2013:21:39:32:200 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+02/Nov/2013:21:39:32,200 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+02/Nov/2013:21:39:34:200 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+02/Nov/2013:21:39:34,200 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+02/Nov/2013:21:39:36:200 [CRITICAL] Aborting
+02/Nov/2013:21:39:36,200 [CRITICAL] Aborting
+02/Nov/2013:21:39:37:200 [CRITICAL] ./mysqld: Shutdown complete
+02/Nov/2013:21:39:37,200 [CRITICAL] ./mysqld: Shutdown complete
+03/Nov/2013:03:39:50:122 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+03/Nov/2013:03:39:50,122 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+03/Nov/2013:03:39:52:122 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+03/Nov/2013:03:39:52,122 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+03/Nov/2013:03:39:53:122 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+03/Nov/2013:03:39:53,122 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+03/Nov/2013:03:39:54:122 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+03/Nov/2013:03:39:54,122 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+03/Nov/2013:03:39:56:122 [CRITICAL] Aborting
+03/Nov/2013:03:39:56,122 [CRITICAL] Aborting
+03/Nov/2013:03:39:56:122 [CRITICAL] ./mysqld: Shutdown complete
+03/Nov/2013:03:39:56,122 [CRITICAL] ./mysqld: Shutdown complete
+03/Nov/2013:21:09:00:151 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+03/Nov/2013:21:09:00,151 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+03/Nov/2013:21:09:01:151 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+03/Nov/2013:21:09:01,151 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+03/Nov/2013:21:09:02:151 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+03/Nov/2013:21:09:02,151 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+03/Nov/2013:21:09:04:151 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+03/Nov/2013:21:09:04,151 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+03/Nov/2013:21:09:05:151 [CRITICAL] Aborting
+03/Nov/2013:21:09:05,151 [CRITICAL] Aborting
+03/Nov/2013:21:09:07:151 [CRITICAL] ./mysqld: Shutdown complete
+03/Nov/2013:21:09:07,151 [CRITICAL] ./mysqld: Shutdown complete
+04/Nov/2013:09:04:15:115 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+04/Nov/2013:09:04:15,115 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+04/Nov/2013:09:04:16:115 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+04/Nov/2013:09:04:16,115 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+04/Nov/2013:09:04:18:115 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+04/Nov/2013:09:04:18,115 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+04/Nov/2013:09:04:19:115 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+04/Nov/2013:09:04:19,115 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+04/Nov/2013:09:04:20:115 [CRITICAL] Aborting
+04/Nov/2013:09:04:20,115 [CRITICAL] Aborting
+04/Nov/2013:09:04:21:115 [CRITICAL] ./mysqld: Shutdown complete
+04/Nov/2013:09:04:21,115 [CRITICAL] ./mysqld: Shutdown complete
+04/Nov/2013:09:07:21:116 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+04/Nov/2013:09:07:21,116 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+04/Nov/2013:09:07:22:116 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+04/Nov/2013:09:07:22,116 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+04/Nov/2013:09:07:23:116 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+04/Nov/2013:09:07:23,116 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+04/Nov/2013:09:07:24:116 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+04/Nov/2013:09:07:24,116 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+04/Nov/2013:09:07:26:116 [CRITICAL] Aborting
+04/Nov/2013:09:07:26,116 [CRITICAL] Aborting
+04/Nov/2013:09:07:28:116 [CRITICAL] ./mysqld: Shutdown complete
+04/Nov/2013:09:07:28,116 [CRITICAL] ./mysqld: Shutdown complete
+04/Nov/2013:15:32:50:202 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+04/Nov/2013:15:32:50,202 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+04/Nov/2013:15:32:51:202 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+04/Nov/2013:15:32:51,202 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+04/Nov/2013:15:32:52:202 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+04/Nov/2013:15:32:52,202 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+04/Nov/2013:15:32:54:202 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+04/Nov/2013:15:32:54,202 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+04/Nov/2013:15:32:56:202 [CRITICAL] Aborting
+04/Nov/2013:15:32:56,202 [CRITICAL] Aborting
+04/Nov/2013:15:32:56:202 [CRITICAL] ./mysqld: Shutdown complete
+04/Nov/2013:15:32:56,202 [CRITICAL] ./mysqld: Shutdown complete
+04/Nov/2013:15:34:00:210 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+04/Nov/2013:15:34:00,210 [CRITICAL] /opt/mysql/bin/mysqld: Disk is full writing '/mysqllog/binlog/localhost-3306-bin.000020' (Errcode: 28). Waiting for someone to free space... Retry in 60 secs
+04/Nov/2013:15:34:02:210 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+04/Nov/2013:15:34:02,210 [CRITICAL] Error writing file '/mysqllog/slow_log/localhost_3306_slow_queries.log' (errno: 1)
+04/Nov/2013:15:34:03:210 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+04/Nov/2013:15:34:03,210 [CRITICAL] Error writing file '/mysqllog/binlog/localhost-3306-bin' (errno: 28)
+04/Nov/2013:15:34:05:210 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+04/Nov/2013:15:34:05,210 [CRITICAL] Could not use /mysqllog/binlog/localhost-3306-bin for logging (error 28)
+04/Nov/2013:15:34:07:210 [CRITICAL] Aborting
+04/Nov/2013:15:34:07,210 [CRITICAL] Aborting
+04/Nov/2013:15:34:08:210 [CRITICAL] ./mysqld: Shutdown complete
+04/Nov/2013:15:34:08,210 [CRITICAL] ./mysqld: Shutdown complete

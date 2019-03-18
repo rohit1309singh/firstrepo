@@ -1,0 +1,42 @@
+<form>
+    <label>Link Switcher</label>
+    <description>Toggle dashboard content using a list of links.</description>
+    <fieldset submitButton="false">
+        <input type="link" token="unused">
+            <label>Choose a view</label>
+            <choice value="table">Table</choice>
+            <choice value="chart">Chart</choice>
+            <default>Table</default>
+            <change>
+                <condition value="table">
+                    <set token="showTable">true</set>
+                    <unset token="showChart"></unset>
+                </condition>
+                <condition value="chart">
+                    <set token="showChart">true</set>
+                    <unset token="showTable"></unset>
+                </condition>
+            </change>
+        </input>
+    </fieldset>
+    <row>
+        <panel>
+            <table depends="$showTable$">
+                <title>Table</title>
+                <search>
+                    <query>index=_internal | stats count by source</query>
+                    <earliest>-24h</earliest>
+                    <latest>now</latest>
+                </search>
+            </table>
+            <chart depends="$showChart$">
+                <title>Chart</title>
+                <search>
+                    <query>index=_internal | stats count by source</query>
+                    <earliest>-24h</earliest>
+                    <latest>now</latest>
+                </search>
+            </chart>
+        </panel>
+</row>
+</form>

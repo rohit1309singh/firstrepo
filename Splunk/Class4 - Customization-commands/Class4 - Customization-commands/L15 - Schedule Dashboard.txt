@@ -1,0 +1,48 @@
+## Scheduling Dashboard
+
+1. Exporting Splunk Dashboard into PDF using two ways
+
+a. Global Export Button
+
+b. Schedule PDF Delivery
+
+
+Limitations:
+
+a. Schedule PDF delivery is not available for Forms.
+
+b. Schedule PDF delivery is not available for HTMLs only for Simple XML
+
+c. PDFs for dashboards with multiple panels in a row might generate with only a single panel per row.
+
+How to:
+
+Dashboards - Take your dashboard - Edit - Schedule PDF Delivery - Schedule it and Save
+
+Where to see:
+
+a. Go to Searches,reports and alerts 
+
+b. Scheduled dashboard is stored under this name
+
+	_ScheduledView_<Your dashboard name>
+
+c. Open it. There instead of search query it will be no operation as noop
+
+
+Settings to change:
+
+By default dashboard could be scheduled as PDF
+
+1. For PDF max rows would be 1000. You can increase this by changing in Search head limits.conf
+
+/opt/splunk/etc/system/local -- Under pdf stanza
+
+[pdf]
+max_rows_per_table = <unsigned int>
+
+2. The default timeout for PDF generation is 3600 seconds. If your search is complex then increase it in Search head limits.conf
+
+[pdf]
+render_endpoint_timeout = <unsigned int>
+

@@ -1,0 +1,56 @@
+Sample Navigation
+
+
+Topics to be discussed
+
+1. Ordinary collection
+2. Dashboard collection
+3. Reports and Alert collection
+4. Unclassified and Match collection
+5. Nested collection
+6. Color Edition
+7. Default setting
+
+
+
+<nav>
+  <collection label="Dashboard">
+    <view name="mydashboard" />
+  </collection>
+  <collection label="Searches">
+    <view name="mysearchview" default="true" />
+  </collection>
+  <collection label="Others">
+        <view source="unclassified" />
+  </collection>
+  <collection label="Saved Searches">
+    <saved name="MySavedSearch" />
+  </collection>
+  <collection label="Others">
+    <view source="unclassified" />
+  </collection>
+  <collection label="Saved Searches">
+    <saved source="unclassified" />
+  </collection>
+  <collection label="Errors">
+    <view source="all" match="error" />
+  </collection>
+</nav>
+
+
+Nested
+
+<nav>
+  <collection label="Dashboard">
+    <view name="helloworlddash" />
+  </collection>
+  <collection label="Views">
+    <view name="helloworldview" default="true" />
+      <collection label="Others">
+        <view source="unclassified" />
+      </collection> 
+  </collection>
+</nav>
+
+
+

@@ -1,0 +1,45 @@
+Time modifiers
+
+1. strptime - Parsing the time - Convert human readable time into epoch
+
+2. strftime - Format  the time - Convert epoch into human readable
+
+
+What is Epoch time value
+
+Every log file is human readable
+
+Splunk does not understand the human reaadable timestamp
+
+Splunk convert human dates into epoch time
+
+1st Jan 1970 00:00:00 --- 0th second
+             01:00:00 --- 3600
+
+Num of seconds from 1st Jan 1970
+
+http://www.epochconverter.com/
+
+Value to convert into epoch
+
+| eval starttime="2016-08-16 10:00:00" 
+
+
+| eval startepoch=strptime(starttime,"%Y-%m-%d %H:%M:%S")
+
+
+## Query for strptime
+## Convert human readable into epoch
+
+index=_internal | head 1 | eval starttime="2016-08-16 10:00:00" | eval startepoch=strptime(starttime,"%Y-%m-%d %H:%M:%S")| eval endtime="2016-08-16 12:00:00" | eval endepoch=strptime(endtime,"%Y-%m-%d %H:%M:%S")  | eval duration=round(endepoch-startepoch) | eval duration=duration/3600 | table starttime endtime startepoch endepoch duration
+
+
+## Query for strftime
+## Convert epoch into human readable
+
+index=_internal | head 1 | eval starttime="1471321800" | eval mydate=strftime(starttime,"%Y-%m-%d %H:%M") | table starttime mydate
+
+
+
+
+

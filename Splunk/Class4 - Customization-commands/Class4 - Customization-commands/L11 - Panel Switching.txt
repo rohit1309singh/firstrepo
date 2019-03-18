@@ -1,0 +1,36 @@
+<form>
+    <label>Internal Index Detailed Summary</label>
+	<description>Form to switch different panels in a single dashboard</description>
+   <row>
+      <panel>  
+        <input type="dropdown" token="" searchWhenChanged="true">
+          <choice value="source">Display Source List</choice>
+          <choice value="sourcetype">Display Sourcetype List</choice>
+          <choice value="host">Display Host List</choice>
+          <default></default>
+        
+          <change>
+            <condition value="source">
+              <set token="new_search"> index=_internal |stats count by source </set>
+            </condition>
+            <condition value="sourcetype">
+              <set token="new_search"> index=_internal |stats count by sourcetype </set>
+            </condition>
+            <condition value="host">
+              <set token="new_search"> index=_internal |stats count by host </set>
+            </condition>
+          </change>
+        </input>
+        
+        <chart>
+          <search>
+            <query>$new_search$</query>
+            <earliest>-24h@h</earliest>
+            <latest>now</latest>
+          </search>
+          <option name="charting.chart">column</option>
+		  <option name="charting.fieldColors">{"count":0xF87217}</option>
+        </chart>
+      </panel>
+    </row>
+  </form>

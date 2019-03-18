@@ -1,0 +1,61 @@
+<dashboard>
+  <label>Selected chart examples</label>
+  <row>
+    <panel>
+      <chart>
+        <title>A line chart</title>
+        <search>
+          <query>
+            index=_internal source="*metrics.log" 
+            group=per_sourcetype_thruput 
+            | timechart sum(kb) by series
+          </query>
+          <earliest>-1h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+      </chart>
+    </panel>
+  
+    <panel>
+      <chart>
+        <title>Show only splunkd_access and splunkd fields</title>
+        <search>
+          <query>
+            index=_internal source="*metrics.log"
+            group=per_sourcetype_thruput 
+            | timechart sum(kb) by series
+          </query>
+          <earliest>-1h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.data.fieldShowList">
+          ["splunkd_access", "splunkd"]
+        </option>
+        <option name="charting.chart">line</option>
+      </chart>
+    </panel>
+  </row>
+
+  <row>  
+    <panel>
+      <chart>
+        <title>Show all fields except splunk_web_service, splunkd_access, and splunkd</title>
+        <search>
+          <query>
+            index=_internal source="*metrics.log"
+            group=per_sourcetype_thruput
+            | timechart sum(kb) by series
+          <earliest>-1h</earliest>
+          <latest>now</latest>
+          </query>
+        </search>
+        <option name="charting.data.fieldHideList">
+          ["splunk_web_service", "splunkd_access", "splunkd"]
+        </option>
+        <option name="charting.chart">line</option>
+      </chart>
+    </panel>
+    
+  </row>
+</dashboard>

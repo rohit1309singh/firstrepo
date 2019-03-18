@@ -1,0 +1,13 @@
+Relative time and now
+
+relative_time(X,Y)	This function takes an epochtime time, X, as the first argument and a relative time specifier, Y, as the second argument and returns the epochtime value of Y applied to X.	... | eval n=relative_time(now(), "-1d@d")
+
+
+index=_internal | head 1 | eval now=now() | convert ctime(now) as time | eval today=relative_time(now(),"@d")
+
+
+Going to return beginning of today epoch time
+
+### Multisearch
+
+|multisearch [search index=_internal earliest=-5m@m | eval type="a"] [search index=_internal earliest=-30m@m | eval type="b" ] | chart count(eval(type="a")) as a , count(eval(type="b")) as b| eval  div= b/a | fields - a, - b 

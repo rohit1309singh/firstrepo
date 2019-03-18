@@ -1,0 +1,81 @@
+Splunk Search commands
+
+1. Start your search with Metadata
+
+2. Start your search with Time picker
+
+
+### metadata ###
+
+The metadata command returns a list of source, sourcetypes, or hosts from a specified index
+
+| metadata type=sourcetypes index=_internal
+
+
+### metasearch ###
+
+Retrieves event metadata from indexes based on terms in the <logical-expression>
+
+| metasearch 200 index=onlinestore
+
+
+### stats ###
+
+index=onlinestore | stats count by category_id
+
+
+
+### sort ###
+
+Descending
+
+index=onlinestore | stats count by category_id | sort - count
+
+Ascending
+
+index=onlinestore | stats count by category_id | sort + count
+
+
+### Top & Rare ###
+
+
+index=onlinestore | top limit=2 category_id
+
+index=onlinestore | rare limit=2 category_id
+
+
+
+### fields ###
+
+Hide using fields
+
+index=onlinestore | top limit=2 category_id | fields - percent
+
+
+
+### table ### 
+
+index=onlinestore | table clientip category_id action status 
+
+
+
+### Filling the null values ###
+
+index=onlinestore | table clientip category_id action status | fillnull value="No info available"
+
+index=onlinestore | table clientip category_id action status | filldown
+
+
+
+### Rename strings ###
+
+index=onlinestore | table clientip category_id action status | filldown | rename action as "Product action"
+
+index=onlinestore | table clientip category_id action status | filldown | rename action as "Product action" | replace GIFTS with "TOYS" in category_id
+
+
+
+### Mapping commands ###
+
+index=onlinestore | iplocation clientip | geostats count by Country
+
