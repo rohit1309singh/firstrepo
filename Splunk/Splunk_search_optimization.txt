@@ -1,0 +1,95 @@
+
+SPLUNK QUERY OPTIMIZATION:
+===========================
+
+QUERY TO BE OPTIMIZED:
+-----------------------
+index=sampledata source="/usr/testing/apache2.splunk.com/access_combined.log" | stats count by category_id,status
+
+STEPS:
+------
+1. Limit the data which needs to be pulled from the disk to an absolute minimum.
+2. Filter the data as early as possible in the query so that minimum amount of data is processed.
+
+-> To limit the data:
+
+1. Narrow the time window, use the time range picker or make use of the time modifier in the query itself.
+
+index=sampledata source="/usr/testing/apache2.splunk.com/access_combined.log" 
+earliest=10/31/2013:0:0:0 latest=11/04/2013:0:0:0 
+| stats count by category_id,status
+
+NOTE: Some imp time modifiers:
+-----------------------------
+
+earliest=-mon@mon
+latest=@mon
+Search begins at the start of the previous month and ends at the start of the current month.
+
+earliest=-2d
+The search goes back exactly 2 days.
+ex: date of search: 03/19/2019 (14:04)
+    It will search starting from 03/17/2019 (14:04)
+
+earliest=-2d@d
+The search goes back two days and searches from the beginning of the day.
+ex: date of search: 03/19/2019 (14:04)
+    It will search starting from 03/17/2019 (00:00)
+
+
+
+3. Avoid using wildcard characters:
+----------------------------------------------------------------------------------------------------------------------------
+-Avoid using wildcards to increase the search efficiency, wildcard searches takes a longer period of time for processing.
+
+index=sampledata source="/usr/testing/apache2.splunk.com/access_combined.log"
+earliest=10/31/2013:0:0:0 latest=11/04/2013:0:0:0
+| search status=200 OR status=3* | stats  count by category_id,status
+
+
+4. Avoid using NOT expression:
+----------------------------------------------------------------------------------------------------------------------------
+-It takes more time for processing, always try to be specific with your search.
+
+Incorrect:
+
+   index=sampledata source="/usr/testing/apache2.splunk.com/access_combined.log" 
+   earliest=10/31/2013:0:0:0 latest=11/04/2013:0:0:0
+   category_id!="FLOWERS" | search status=200 OR status=301| stats  count by category_id,status
+
+Correct:
+   
+   index=sampledata source="/usr/testing/apache2.splunk.com/access_combined.log" 
+   earliest=10/31/2013:0:0:0 latest=11/04/2013:0:0:0
+   category_id="CANDY" OR category_id="PLANTS" status=200 OR status=301| stats  count by category_id,status
+
+
+5. Filter the data ASAP:
+-----------------------------------------------------------------------------------
+->Filter the data asap before performing any sort of calculations. 
+->Filte the data using the field value pairs.
+
+Incorrect:
+
+index=sampledata source="/usr/testing/apache2.splunk.com/access_combined.log" 
+earliest=10/31/2013:0:0:0 latest=11/04/2013:0:0:0 
+| stats  count by category_id,status | search category_id="BALLOONS" OR category_id="CANDY"
+
+correct way to improve the processing:
+
+index=sampledata source="/usr/testing/apache2.splunk.com/access_combined.log"
+earliest=10/31/2013:0:0:0 latest=11/04/2013:0:0:0
+category_id="CANDY" OR category_id="PLANTS" status=200 OR status=301| stats  count by category_id,status
+
+
+6. Use the fields command to remove unnecessary fields from the search result:
+   Use the non-streaming commands like dedup,sort as late as possible in the search query.
+-----------------------------------------------------------------------------------------------------------------
+
+index=sampledata source="/usr/testing/apache2.splunk.com/access_combined.log"
+earliest=10/31/2013:0:0:0 latest=11/04/2013:0:0:0
+category_id="CANDY" OR category_id="PLANTS" status=200 OR status=301| stats  count by category_id,status | fields - count
+
+
+
+
