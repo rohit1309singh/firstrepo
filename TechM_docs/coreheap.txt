@@ -1,0 +1,64 @@
+CORE DUMP/HEAP DUMP 
+
+1. We take core dump as per the time provided in Perf Test chatroom. Make sure you start code dump after few seconds after the time mentioned
+
+2. Suppose we are taking core dump for olam then first take out the jvm pid:
+
+3. Go to the below location:  (Domain location)
+/opt/app/workload/pnv1pfamm1/component/olamDomain/bin
+Run the following command :
+ps -ef | grep -I <domain-name >
+for eg : for olamdomain 
+follow the below steps :
+
+/opt/app/workload/pnv1pfamm1/component/olamDomain/bin
+ps -ef | grep -I <domain-name > or <vtier-name> 
+351158    79417  79324  7 May01 ?        01:20:13 /opt/app/workload/component/JDK/jdk170_91/bin/java
+
+At the below path :
+
+/opt/app/workload/pnv1pfamm1/component/olamDomain/
+Run the below command 
+
+gcore <pid> 
+for eg : gcore  79417
+
+Core Dump will start generating .. 
+
+wait for 10 mins 
+
+cd  /opt/app/workload/pnv1pfamm1/component/olamDomain/
+ls -lrt 
+Core dump will be generated like below :
+core.<id>
+After that take the heap dump 
+
+Run the following command :
+nohup /opt/app/workload/component/JDK/jdk1.8.0_144/bin/jmap -J-d64 -heap:format=b /opt/app/workload/component/JDK/jdk1.8.0_144/bin/java core &
+
+wait for 10 mins for the heap dump to be generated .
+
+Need to copy 5 files for analysis like below as example:
+
+cd /opt/app/workload/pnv1pfamm1/component/olamDomain/ > ls -rlt 
+
+ copy logs and core 
+
+cd /opt/app/workload/pnv1pfamm1/perf/data
+copy data folder 
+
+cd /opt/app/workload/pnv1pfamm1/loadcheck
+copy -rwxrwxrwx 1 pnv1pfamm1 noammw 42860368 May  3 11:51 pnv1pfamm1_loadcheck.log
+zlp10290(pnvmmw1):/opt/app/workload/pnv1pfamm1/loadcheck >
+Copy all 5 files/directories here at below webserver location :
+
+cd /opt/app/workload/component/iplanet7019/https-zlp10290.vci.att.com/docs/PERFLOGS 
+
+
+
+
+Path to copy data -- opt/app/doam_nas17/PERF/TEST_DATA 
+zlp10290 - for olam, mobile and zone 
+sudo su - myattprd 
+zlp10167 - for OPSS 
+

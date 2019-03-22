@@ -1,0 +1,396 @@
+<Table border =1>
+<TR><TH colspan=14 align=center > <Font size = 3 background-color = #FF00FF>Employee Details</TH></TR>
+<TR><TH align=Left>Employee Code:</TH>
+<TD colspan=6 align=Center>431653</TD>
+<TH colspan=2 align=Left>PF No:</TH>
+<TD colspan=5 align=Center>PUPUN00342240000200173</TD></TR>
+<TR><TH align=Left>Name:</TH>
+<TD colspan=6 align=Center>Rohit Singh</TD>
+<TH colspan=2 align=Left>ESIC No:</TH>
+<TD colspan=5 align=Center></TD></TR>
+<TR><TH align=Left>Country:</TH>
+<TD colspan=4 align=Center>IND</TD>
+<TH align=Left> Currency:</TH>
+<TD colspan=4 align=Center>INR</TD>
+<TH align=Left> Period:</TH>
+<TD colspan=3 align=Center>2018-2019</TD></TR>
+</Table>
+<br></br><br></br><Table border =1>
+<TR><TH colspan= 14 align=center > <Font size = 3 background-color = #FF00FF>Days Worked </TH></TR>
+<TR><TH>  </TH>
+<TH> April </TH>
+<TH> May </TH>
+<TH> June </TH>
+<TH> July </TH>
+<TH> August </TH>
+<TH> September </TH>
+<TH> October </TH>
+<TH> November </TH>
+<TH> December </TH>
+<TH> January </TH>
+<TH> February </TH>
+<TH> March </TH>
+</TR>
+<TR><TD> </TD>
+<TD>30</TD>
+<TD>31</TD>
+<TD>30</TD>
+<TD>31</TD>
+<TD>31</TD>
+<TD>30</TD>
+<TD>31</TD>
+<TD>30</TD>
+<TD>31</TD>
+<TD>31</TD>
+<TD>28</TD>
+<TD>0</TD>
+</TR>
+</Table>
+<br></br><br></br><Table border =1>
+<TR><TH colspan= 14 align=center > <Font size = 3 background-color = #FF00FF>Earning Statement </TH></TR>
+<TR><TH> Description </TH>
+<TH> April </TH>
+<TH> May </TH>
+<TH> June </TH>
+<TH> July </TH>
+<TH> August </TH>
+<TH> September </TH>
+<TH> October </TH>
+<TH> November </TH>
+<TH> December </TH>
+<TH> January </TH>
+<TH> February </TH>
+<TH> March </TH>
+<TH> Grand Total </TH></TR>
+<TR><TD>** Reconciled Variable Pay</TD>
+<TD>1093</TD>
+<TD>1093</TD>
+<TD>1093</TD>
+<TD>1093</TD>
+<TD>1193</TD>
+<TD>1193</TD>
+<TD>1193</TD>
+<TD>1193</TD>
+<TD>1193</TD>
+<TD>1193</TD>
+<TD>1193</TD>
+<TD>0</TD>
+<TD><B>12723</B></TD></TR>
+<TR><TD>Additional Personal Pay</TD>
+<TD>9042</TD>
+<TD>9042</TD>
+<TD>9042</TD>
+<TD>11799</TD>
+<TD>11799</TD>
+<TD>11799</TD>
+<TD>20070</TD>
+<TD>11799</TD>
+<TD>11799</TD>
+<TD>11799</TD>
+<TD>11799</TD>
+<TD>0</TD>
+<TD><B>129789</B></TD></TR>
+<TR><TD>Adv Stat Bonus (Monthly)</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>2000</TD>
+<TD>0</TD>
+<TD><B>22000</B></TD></TR>
+<TR><TD>Advance Variable Pay (60%)</TD>
+<TD>1640</TD>
+<TD>1640</TD>
+<TD>1640</TD>
+<TD>1790</TD>
+<TD>1790</TD>
+<TD>1790</TD>
+<TD>2240</TD>
+<TD>1790</TD>
+<TD>1790</TD>
+<TD>1790</TD>
+<TD>1790</TD>
+<TD>0</TD>
+<TD><B>19690</B></TD></TR>
+<TR><TD>Base Salary</TD>
+<TD>7379</TD>
+<TD>7379</TD>
+<TD>7379</TD>
+<TD>8054</TD>
+<TD>8054</TD>
+<TD>8054</TD>
+<TD>10079</TD>
+<TD>8054</TD>
+<TD>8054</TD>
+<TD>8054</TD>
+<TD>8054</TD>
+<TD>0</TD>
+<TD><B>88594</B></TD></TR>
+<TR><TD>Car Lease Pay</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD><B>0</B></TD></TR>
+<TR><TD>Conveyance Allowance</TD>
+<TD>1600</TD>
+<TD>1600</TD>
+<TD>1600</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>-4800</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD><B>0</B></TD></TR>
+<TR><TD>House Rent Allowance</TD>
+<TD>3689</TD>
+<TD>3689</TD>
+<TD>3689</TD>
+<TD>4027</TD>
+<TD>4027</TD>
+<TD>4027</TD>
+<TD>5041</TD>
+<TD>4027</TD>
+<TD>4027</TD>
+<TD>4027</TD>
+<TD>4027</TD>
+<TD>0</TD>
+<TD><B>44297</B></TD></TR>
+<TR><TD>Leave Encashment</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD><B>0</B></TD></TR>
+<TR><TD>On Call Allowance</TD>
+<TD>400</TD>
+<TD>0</TD>
+<TD>800</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>400</TD>
+<TD>800</TD>
+<TD>600</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD><B>3000</B></TD></TR>
+<TR><TD>Shift Allowance</TD>
+<TD>4275</TD>
+<TD>3825</TD>
+<TD>450</TD>
+<TD>4275</TD>
+<TD>4500</TD>
+<TD>4275</TD>
+<TD>4050</TD>
+<TD>3600</TD>
+<TD>4500</TD>
+<TD>3600</TD>
+<TD>4050</TD>
+<TD>0</TD>
+<TD><B>41400</B></TD></TR>
+<TR><TD>GRAND TOTAL</TD>
+<TD>31118</TD>
+<TD>30268</TD>
+<TD>27693</TD>
+<TD>33038</TD>
+<TD>33363</TD>
+<TD>33538</TD>
+<TD>40673</TD>
+<TD>33063</TD>
+<TD>33363</TD>
+<TD>32463</TD>
+<TD>32913</TD>
+<TD>0</TD>
+<TD><B>361493</B></TD></TR>
+</Table>
+<br></br><Table border =1>
+<TR><TH colspan=14 align=center > <Font size = 3 background-color = #FF00FF>Deduction Statement </TH></TR>
+<TR><TH> Description </TH>
+<TH> April </TH>
+<TH> May </TH>
+<TH> June </TH>
+<TH> July </TH>
+<TH> August </TH>
+<TH> September </TH>
+<TH> October </TH>
+<TH> November </TH>
+<TH> December </TH>
+<TH> January </TH>
+<TH> February </TH>
+<TH> March </TH>
+<TH> Grand Total </TH></TR>
+<TR><TD>AWT Monthly Recovery</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>1</TD>
+<TD>1</TD>
+<TD>0</TD>
+<TD><B>2</B></TD></TR>
+<TR><TD>AWT Registration Charges</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>200</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD><B>200</B></TD></TR>
+<TR><TD>Cab deduction</TD>
+<TD>1500</TD>
+<TD>2065</TD>
+<TD>0</TD>
+<TD>2001</TD>
+<TD>1994</TD>
+<TD>1996</TD>
+<TD>1987</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>3500</TD>
+<TD>-500</TD>
+<TD>0</TD>
+<TD><B>14543</B></TD></TR>
+<TR><TD>Provident Fund</TD>
+<TD>885</TD>
+<TD>885</TD>
+<TD>885</TD>
+<TD>966</TD>
+<TD>966</TD>
+<TD>966</TD>
+<TD>1209</TD>
+<TD>966</TD>
+<TD>966</TD>
+<TD>966</TD>
+<TD>966</TD>
+<TD>0</TD>
+<TD><B>10626</B></TD></TR>
+<TR><TD>TDS</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>1113</TD>
+<TD>0</TD>
+<TD><B>1113</B></TD></TR>
+<TR><TD>GRAND TOTAL</TD>
+<TD>2385</TD>
+<TD>2950</TD>
+<TD>885</TD>
+<TD>2967</TD>
+<TD>2960</TD>
+<TD>2962</TD>
+<TD>3196</TD>
+<TD>966</TD>
+<TD>966</TD>
+<TD>4667</TD>
+<TD>1580</TD>
+<TD>0</TD>
+<TD><B>26484</B></TD></TR>
+</Table>
+<br></br><Table  border =1 style= solid black>
+<TR><TH  colspan=14  align=center > <Font size = 3 background-color = #FF00FF>Net Details </TH></TR>
+<TR><TH> Emplopyee id</TH>
+<TH> April </TH>
+<TH> May </TH>
+<TH> June </TH>
+<TH> July </TH>
+<TH> August </TH>
+<TH> September </TH>
+<TH> October </TH>
+<TH> November </TH>
+<TH> December </TH>
+<TH> January </TH>
+<TH> February </TH>
+<TH> March </TH>
+<TH> Grand Total </TH></TR>
+<TR><TD>431653</TD>
+<TD>28733</TD>
+<TD>27318</TD>
+<TD>26808</TD>
+<TD>30071</TD>
+<TD>30403</TD>
+<TD>30576</TD>
+<TD>37477</TD>
+<TD>32097</TD>
+<TD>32397</TD>
+<TD>27796</TD>
+<TD>31333</TD>
+<TD>0</TD>
+<TD><B>335009</B></TD></TR>
+</Table>
+<br></br><Table border =1>
+<TR><TH colspan=14 align=center > <Font size = 3 background-color = #FF00FF>Other Income Details </TH></TR>
+<TR><TH> Description </TH>
+<TH> April </TH>
+<TH> May </TH>
+<TH> June </TH>
+<TH> July </TH>
+<TH> August </TH>
+<TH> September </TH>
+<TH> October </TH>
+<TH> November </TH>
+<TH> December </TH>
+<TH> January </TH>
+<TH> February </TH>
+<TH> March </TH>
+<TH> Grand Total </TH></TR>
+<TR><TD></TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD>0</TD>
+<TD><B>0</B></TD></TR>
+</Table>
